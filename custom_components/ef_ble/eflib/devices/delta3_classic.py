@@ -138,6 +138,8 @@ class Device(DeviceBase, ProtobufProps):
                 model = "Classic"
             case "D3M1":
                 model = "Max Plus"
+            case "D3N1":
+                model = "Max"
         return f"Delta 3 {model}".strip()
 
     async def packet_parse(self, data: bytes) -> Packet:
